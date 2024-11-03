@@ -184,7 +184,7 @@ class UI {
             } else {
                 quorumMark = '<em class="fas fa-times nay"></em>';
             }
-            const majorityMet = mirrorReferendum.voteSummary.majority >= trackPolicy.majority;
+            const majorityMet = mirrorReferendum.voteSummary.majority > trackPolicy.majority;
             let majorityMark = '';
             if (majorityMet) {
                 majorityMark = '<em class="fas fa-check aye"></em>';
