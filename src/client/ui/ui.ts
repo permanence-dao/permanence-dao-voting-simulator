@@ -13,6 +13,7 @@ interface UIDelegate {
 class UI {
     private readonly root: HTMLElement;
     private readonly content: HTMLDivElement;
+    private readonly loadingContainer: HTMLDivElement;
     private readonly votingPolicyTitle: HTMLDivElement;
     private readonly votingPolicyTitleChevron: HTMLDivElement;
     private readonly votingPolicy: HTMLDivElement;
@@ -29,6 +30,7 @@ class UI {
         this.delegate = delegate;
         this.root = <HTMLElement>document.getElementById('root');
         this.content = <HTMLDivElement>document.getElementById('content');
+        this.loadingContainer = <HTMLDivElement>document.getElementById('loading-container');
         this.votingPolicyTitle = <HTMLDivElement>document.getElementById('voting-policy-title');
         this.votingPolicyTitleChevron = <HTMLDivElement>(
             document.getElementById('voting-policy-title-chevron')
@@ -118,6 +120,7 @@ class UI {
         this.trackQuorumSelect.disabled = true;
         this.trackMajoritySelect.disabled = true;
         this.recalculateVotesButton.disabled = true;
+        show(this.loadingContainer);
     }
 
     unlock() {
@@ -126,6 +129,7 @@ class UI {
         this.trackQuorumSelect.disabled = false;
         this.trackMajoritySelect.disabled = false;
         this.recalculateVotesButton.disabled = false;
+        hide(this.loadingContainer);
     }
 
     displayMirrorReferendumList(mirrorReferendumList: MirrorReferendum[]) {

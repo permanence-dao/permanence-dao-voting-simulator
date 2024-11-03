@@ -30,8 +30,12 @@ class Voting {
     async start() {
         this.ui.clearReferendumList();
         this.ui.lock();
-        const mirrorReferendumList = await this.dataStore.fetchMirrorReferenda();
-        this.ui.displayMirrorReferendumList(mirrorReferendumList);
+        try {
+            const mirrorReferendumList = await this.dataStore.fetchMirrorReferenda();
+            this.ui.displayMirrorReferendumList(mirrorReferendumList);
+        } catch (error) {
+            alert(`Error while fetching referenda: ${error}. Please retry.`);
+        }
         this.ui.unlock();
     }
 }
