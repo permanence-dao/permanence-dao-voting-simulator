@@ -44,17 +44,17 @@ VOTING_POLICY.set(Track.FellowshipAdmin, {
 });
 VOTING_POLICY.set(Track.SmallTipper, {
     participation: 0.3,
-    quorum: 0.3,
+    quorum: 0.0,
     majority: 0.5,
 });
 VOTING_POLICY.set(Track.BigTipper, {
-    participation: 0.3,
-    quorum: 0.3,
+    participation: 0.35,
+    quorum: 0.0,
     majority: 0.5,
 });
 VOTING_POLICY.set(Track.SmallSpender, {
-    participation: 0.4,
-    quorum: 0.4,
+    participation: 0.5,
+    quorum: 0.0,
     majority: 0.5,
 });
 VOTING_POLICY.set(Track.MediumSpender, {
