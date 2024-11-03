@@ -1,7 +1,8 @@
-import { MirrorReferendum, Vote } from '../data/types';
+import { MirrorReferendum, Network, Vote } from '../data/types';
 import { MEMBERS, VOTING_POLICY } from '../util/constants';
 import { getTrackShortName } from '../util/format';
 import { hide, show } from '../util/ui-util';
+import { marked } from 'marked';
 
 interface UIDelegate {
     onRecalculateVotes(): void;
@@ -139,6 +140,11 @@ class UI {
             div.classList.add('mirror-referendum');
             const title = `[${getTrackShortName(mirrorReferendum.helperData.track)}] ${mirrorReferendum.helperData.network} #${mirrorReferendum.helperData.referendumId}: ${mirrorReferendum.helperData.title}`;
             let divHTML = `<div class="mirror-referendum-title">${title}</div>`;
+            let network = 'polkadot';
+            if (mirrorReferendum.helperData.network == Network.Kusama) {
+                network = 'kusama';
+            }
+            divHTML += `<div class="mirror-referendum-links"><a href="https://voting.opensquare.io/space/permanence/proposal/${mirrorReferendum.cid}" target="_blank">Voting</a><a href="https://${network}.subsquare.io/referenda/${mirrorReferendum.helperData.referendumId}" target="_blank">Referendum</a></div>`;
             divHTML += `<div class="mirror-referendum-vote-counts"><span>🗳️</span><span class="aye">${mirrorReferendum.voteSummary.ayeCount}</span><span>•</span><span class="nay">${mirrorReferendum.voteSummary.nayCount}</span><span>•</span><span class="abstain">${mirrorReferendum.voteSummary.abstainCount}</span></div>`;
             // verdict
             divHTML += '<div class="mirror-referendum-verdict"><span>⚖️</span>';
@@ -211,6 +217,7 @@ class UI {
                 }
                 divHTML += `<div class="mirror-referendum-vote-member">${member}</div>`;
                 divHTML += '</div>';
+                divHTML += `<div class="mirror-referendum-vote-comment">${marked(vote.remark)}</div>`;
             }
             divHTML += '</div>';
 

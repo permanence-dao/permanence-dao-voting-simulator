@@ -39,6 +39,7 @@ a:hover,
 a:active {
     cursor: pointer;
     text-decoration: underline;
+    color: #222222;
 }
 
 /* votes */
@@ -190,6 +191,13 @@ a:active {
     white-space: nowrap;
 }
 
+.mirror-referendum-links {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    font-size: 12px;
+}
+
 .mirror-referendum-vote-counts {
     display: flex;
     flex-direction: row;
@@ -269,6 +277,18 @@ a:active {
 
 .mirror-referendum-vote-member {
     width: 180px;
+    font-weight: bold;
+}
+
+.mirror-referendum-vote-member-comment {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mirror-referendum-vote-comment p {
+    margin: 0px;
 }
 
 .mirror-referendum-vote em {

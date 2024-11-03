@@ -30,17 +30,17 @@ export const VOTING_POLICY = new Map<Track, TrackVotingPolicy>();
 VOTING_POLICY.set(Track.WishForChange, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.7,
+    majority: 0.6,
 });
 VOTING_POLICY.set(Track.Treasurer, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.7,
+    majority: 0.6,
 });
 VOTING_POLICY.set(Track.FellowshipAdmin, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.7,
+    majority: 0.6,
 });
 VOTING_POLICY.set(Track.SmallTipper, {
     participation: 0.3,
