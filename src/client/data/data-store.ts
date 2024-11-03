@@ -71,7 +71,7 @@ class DataStore {
                 verdict = Vote.Abstain;
             } else if (
                 quorum >= trackVotingPolicy.quorum &&
-                majority >= trackVotingPolicy.majority
+                majority > trackVotingPolicy.majority
             ) {
                 verdict = Vote.Aye;
             }
