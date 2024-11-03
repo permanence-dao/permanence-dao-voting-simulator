@@ -1,5 +1,5 @@
 {
-    "name": "permanence-dao-voting",
+    "name": "permanence-dao-voting-simulator",
     "version": "0.1.0",
     "description": "Voting policy simulation for Permanence DAO.",
     "scripts": {
