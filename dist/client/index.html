@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Permanence DAO - Voting</title>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="https://kit.fontawesome.com/ebf2cd1147.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body id="root">
+        <script src="bundle.js"></script>
+        <div class="content" id="content">
+            <div class="title-1">Permanence DAO</div>
+            <div class="title-2">Voting Policy Simulator</div>
+            <div class="title-3" id="voting-policy-title">
+                <em class="fas fa-chevron-right" id="voting-policy-title-chevron"></em>VOTING POLICY
+            </div>
+            <div class="voting-policy no-display" id="voting-policy">
+                <div class="voting-policy-row">
+                    <div class="voting-policy-row-title">Track:</div>
+                    <div>
+                        <select name="track-select" id="track-select">
+                            <option value="2">Wish for Change</option>
+                            <option value="11">Treasurer</option>
+                            <option value="13">Fellowship Admin</option>
+                            <option value="30">Small Tipper</option>
+                            <option value="31">Bip Tipper</option>
+                            <option value="32">Small Spender</option>
+                            <option value="33">Medium Spender</option>
+                            <option value="34">Big Spender</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="voting-policy-row">
+                    <div class="voting-policy-row-title">Participation:</div>
+                    <div>
+                        <select
+                            name="track-participation-select"
+                            id="track-participation-select"
+                        ></select>
+                    </div>
+                </div>
+                <div class="voting-policy-row">
+                    <div class="voting-policy-row-title">Quorum:</div>
+                    <div>
+                        <select name="track-quorum-select" id="track-quorum-select"></select>
+                    </div>
+                </div>
+                <div class="voting-policy-row">
+                    <div class="voting-policy-row-title">Majority:</div>
+                    <div>
+                        <select name="track-majority-select" id="track-majority-select"></select>
+                    </div>
+                </div>
+                <div class="voting-policy-row">
+                    <div class="voting-policy-row-title">&nbsp;</div>
+                    <div>
+                        <input
+                            type="button"
+                            id="recalculate-votes-button"
+                            value="Recalculate Votes"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="title-3">VOTES</div>
+            <div class="mirror-referendum-list" id="mirror-referendum-list"></div>
+        </div>
+    </body>
+</html>

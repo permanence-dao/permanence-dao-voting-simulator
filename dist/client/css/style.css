@@ -1,0 +1,287 @@
+body {
+    overflow: hidden;
+    margin: 0px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Verdana', sans-serif;
+    font-size: 13px;
+}
+
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.flex-spacer {
+    flex-grow: 1;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* votes */
+.aye {
+    color: green;
+}
+.aye-bg {
+    background-color: green;
+}
+.nay {
+    color: red;
+}
+.nay-bg {
+    background-color: red;
+}
+.abstain {
+    color: gray;
+}
+.abstain-bg {
+    background-color: gray;
+}
+
+/* loading */
+.loading-container {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.loading-animation {
+    width: 32px;
+    padding: 3px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #cccccc;
+    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: loading-animation-keyframes 1s infinite linear;
+}
+
+@keyframes loading-animation-keyframes {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.loading-container span {
+    text-align: center;
+}
+
+/* content */
+.content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 12px;
+    padding-bottom: 0px !important;
+}
+
+/* titles */
+.title-1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title-2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-3 {
+    width: 100%;
+    background-color: #eee;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title-3 em {
+    width: 8px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* voting policy */
+.voting-policy {
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.voting-policy-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.voting-policy-row-title {
+    font-weight: bold;
+    width: 120px;
+}
+
+.voting-policy input[type='button'] {
+    cursor: pointer;
+}
+
+/* mirror referendum list */
+.mirror-referendum-list {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 12px;
+}
+
+/* mirror referendum */
+.mirror-referendum {
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mirror-referendum-title {
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mirror-referendum-vote-counts {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.mirror-referendum-verdict {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: bold;
+}
+
+/* subsection */
+.mirror-referendum-subsection-title {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    gap: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mirror-referendum-subsection-title em {
+    width: 12px;
+    font-size: 10px;
+}
+
+.mirror-referendum-subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #eee;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* stat */
+.mirror-referendum-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mirror-referendum-stat-title {
+    width: 110px;
+    font-weight: bold;
+}
+
+.mirror-referendum-stat-value {
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.mirror-referendum-stat em {
+    width: 14px;
+    margin-left: 4px;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* vote */
+.mirror-referendum-vote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.mirror-referendum-vote-member-vote {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.mirror-referendum-vote-member {
+    width: 180px;
+}
+
+.mirror-referendum-vote em {
+    width: 14px;
+    margin-left: 4px;
+    font-size: 11px;
+    text-align: center;
+}
