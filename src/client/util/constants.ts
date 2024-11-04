@@ -137,3 +137,11 @@ MIRROR_REFERENDUM_HELPER_DATA.set('67271eed355f17287ad907ad', {
     track: Track.BigSpender,
     title: 'Apillon Milestone 3 Proposal',
 });
+MIRROR_REFERENDUM_HELPER_DATA.set('6728f58c355f17287ad907b2', {
+    _id: '6728f58c355f17287ad907b2',
+    cid: 'QmXv11vF8VJZHsSkYtDyJ5cFJppz5vd3JfLMAHaw4KqNVw',
+    network: Network.Polkadot,
+    referendumId: 1252,
+    track: Track.BigSpender,
+    title: 'Artemis Analytics Integration',
+});
