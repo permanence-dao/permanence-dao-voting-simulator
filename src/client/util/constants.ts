@@ -30,17 +30,17 @@ export const VOTING_POLICY = new Map<Track, TrackVotingPolicy>();
 VOTING_POLICY.set(Track.WishForChange, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.6,
+    majority: 0.57,
 });
 VOTING_POLICY.set(Track.Treasurer, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.6,
+    majority: 0.57,
 });
 VOTING_POLICY.set(Track.FellowshipAdmin, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.6,
+    majority: 0.57,
 });
 VOTING_POLICY.set(Track.SmallTipper, {
     participation: 0.3,
@@ -65,7 +65,7 @@ VOTING_POLICY.set(Track.MediumSpender, {
 VOTING_POLICY.set(Track.BigSpender, {
     participation: 0.0,
     quorum: 0.6,
-    majority: 0.6,
+    majority: 0.57,
 });
 
 export const MEMBERS = new Map<string, string>();

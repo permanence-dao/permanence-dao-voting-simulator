@@ -193,9 +193,9 @@ class UI {
             }
             divHTML += `<div class="mirror-referendum-subsection-title" id="mirror-referendum-track-policy-title-${mirrorReferendum._id}"><em class="fas fa-chevron-right" id="mirror-referendum-track-policy-title-chevron-${mirrorReferendum._id}"></em>TRACK POLICY</div>`;
             divHTML += `<div class="mirror-referendum-subsection no-display" id="mirror-referendum-track-policy-${mirrorReferendum._id}">`;
-            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Participation:</div><div class="mirror-referendum-stat-value">${Math.floor(trackPolicy.participation * 100)}%</div>${participationMark}</div>`;
-            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Quorum:</div><div class="mirror-referendum-stat-value">${Math.floor(trackPolicy.quorum * 100)}%</div>${quorumMark}</div>`;
-            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Majority:</div><div class="mirror-referendum-stat-value">${Math.floor(trackPolicy.majority * 100)}%</div>${majorityMark}</div>`;
+            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Participation:</div><div class="mirror-referendum-stat-value">&ge;${Math.floor(trackPolicy.participation * 100)}%</div>${participationMark}</div>`;
+            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Quorum:</div><div class="mirror-referendum-stat-value">&ge;${Math.floor(trackPolicy.quorum * 100)}%</div>${quorumMark}</div>`;
+            divHTML += `<div class="mirror-referendum-stat"><div class="mirror-referendum-stat-title">Majority:</div><div class="mirror-referendum-stat-value">&gt;${Math.floor(trackPolicy.majority * 100)}%</div>${majorityMark}</div>`;
             divHTML += '</div>';
             // votes
             divHTML += `<div class="mirror-referendum-subsection-title" id="mirror-referendum-votes-title-${mirrorReferendum._id}"><em class="fas fa-chevron-right" id="mirror-referendum-votes-title-chevron-${mirrorReferendum._id}"></em>VOTES</div>`;
