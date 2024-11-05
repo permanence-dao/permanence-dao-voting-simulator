@@ -50,9 +50,12 @@ class DataStore {
                 },
             )
         ).json();
-        const mirrorReferendumList = data.items.filter(
-            (mirrorReferendum) => mirrorReferendum.status == 'active',
-        );
+        const mirrorReferendumList = data.items
+            .filter((mirrorReferendum) => mirrorReferendum.status == 'active')
+            .filter(
+                (mirrorReferendum) =>
+                    MIRROR_REFERENDUM_HELPER_DATA.get(mirrorReferendum._id) != undefined,
+            );
         for (let i = 0; i < mirrorReferendumList.length; i++) {
             const mirrorReferendum = mirrorReferendumList[i];
             mirrorReferendum.votes = await this.fetchMirrorReferendumVotes(mirrorReferendum.cid);
