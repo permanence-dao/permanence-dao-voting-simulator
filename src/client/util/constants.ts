@@ -145,3 +145,11 @@ MIRROR_REFERENDUM_HELPER_DATA.set('6728f58c355f17287ad907b2', {
     track: Track.BigSpender,
     title: 'Artemis Analytics Integration',
 });
+MIRROR_REFERENDUM_HELPER_DATA.set('672c7cfd355f17287ad907b5', {
+    _id: '672c7cfd355f17287ad907b5',
+    cid: 'QmafjdEKTvqE6fTjnAGFoMTWy6z5FjJ6xaCYJompgDbWZZ',
+    network: Network.Polkadot,
+    referendumId: 1218,
+    track: Track.MediumSpender,
+    title: 'Treasury Proposal for Funding the JAMTON Project',
+});
