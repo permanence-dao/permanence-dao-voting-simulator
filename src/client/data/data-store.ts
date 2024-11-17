@@ -42,7 +42,7 @@ class DataStore {
                 'https://voting.opensquare.io/api/permanence/proposals' +
                     '?' +
                     new URLSearchParams({
-                        page_size: '100',
+                        page_size: '50',
                     }).toString(),
                 {
                     method: 'GET',
