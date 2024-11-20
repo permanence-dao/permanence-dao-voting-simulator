@@ -225,3 +225,36 @@ MIRROR_REFERENDUM_HELPER_DATA.set('672e752a355f17287ad907ba', {
     track: Track.MediumSpender,
     title: 'Polkadot marketing proposal in Chinese speaking areas',
 });
+MIRROR_REFERENDUM_HELPER_DATA.set('673ccf9d355f17287ad907da', {
+    _id: '673ccf9d355f17287ad907da',
+    cid: 'QmUaQ9vxxPEmSkdg5WUXXsTYYyqaXbGu6JcivatzPtW8P5',
+    network: Network.Polkadot,
+    referendumId: 1232,
+    track: Track.BigSpender,
+    title: 'Talisman Wallet and Portal Retroactive Funding',
+});
+
+MIRROR_REFERENDUM_HELPER_DATA.set('673cf7fa355f17287ad907e0', {
+    _id: '673cf7fa355f17287ad907e0',
+    cid: 'QmR8fxZzoPgPWRVEdrabGxW8DqAZSQkaRBUD2SbCFUNKJE',
+    network: Network.Polkadot,
+    referendumId: 1258,
+    track: Track.SmallSpender,
+    title: 'Publishing and promoting the documentary, “Blockchain Gaming,” by the Polkadot community.',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('673cfbeb355f17287ad907e3', {
+    _id: '673cfbeb355f17287ad907e3',
+    cid: 'QmPDm9BF2B6AYfumX242Tc1wSUSMuUSdSSXsjBS7sSjBq9',
+    network: Network.Polkadot,
+    referendumId: 1276,
+    track: Track.SmallSpender,
+    title: 'TIP for the activities made by the Polkadot Mexican Collective',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('673cf6a3355f17287ad907dd', {
+    _id: '673cf6a3355f17287ad907dd',
+    cid: '',
+    network: Network.Polkadot,
+    referendumId: 1254,
+    track: Track.WishForChange,
+    title: 'Bounty Compliance Standards 1.0',
+});
