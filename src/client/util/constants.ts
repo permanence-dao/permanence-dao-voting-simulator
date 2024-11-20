@@ -233,7 +233,6 @@ MIRROR_REFERENDUM_HELPER_DATA.set('673ccf9d355f17287ad907da', {
     track: Track.BigSpender,
     title: 'Talisman Wallet and Portal Retroactive Funding',
 });
-
 MIRROR_REFERENDUM_HELPER_DATA.set('673cf7fa355f17287ad907e0', {
     _id: '673cf7fa355f17287ad907e0',
     cid: 'QmR8fxZzoPgPWRVEdrabGxW8DqAZSQkaRBUD2SbCFUNKJE',
@@ -257,4 +256,12 @@ MIRROR_REFERENDUM_HELPER_DATA.set('673cf6a3355f17287ad907dd', {
     referendumId: 1254,
     track: Track.WishForChange,
     title: 'Bounty Compliance Standards 1.0',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('673d81c7355f17287ad907f6', {
+    _id: '673d81c7355f17287ad907f6',
+    cid: 'QmX8TkUbTMf8UHzXC8Wm5X9a3M9SjkvEAX5YKbBDp65wFZ',
+    network: Network.Polkadot,
+    referendumId: 1272,
+    track: Track.BigSpender,
+    title: 'Crystal Intelligence Blockchain Intelligence Proposal',
 });
