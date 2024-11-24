@@ -265,3 +265,20 @@ MIRROR_REFERENDUM_HELPER_DATA.set('673d81c7355f17287ad907f6', {
     track: Track.BigSpender,
     title: 'Crystal Intelligence Blockchain Intelligence Proposal',
 });
+
+MIRROR_REFERENDUM_HELPER_DATA.set('6742b966355f17287ad90811', {
+    _id: '6742b966355f17287ad90811',
+    cid: 'Qmf4VoXqZbv9memRa5EozWLrucESXVzBuvUyanA65HJTbW',
+    network: Network.Polkadot,
+    referendumId: 1289,
+    track: Track.MediumSpender,
+    title: 'Fuelarts x BitBasel | Creative Tech Accelerator for Polkadot',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('6740c3e1355f17287ad90809', {
+    _id: '6740c3e1355f17287ad90809',
+    cid: 'QmenFRb236AUqneqyiCgx5Fzv6XLKCRzRW7c3JiceBVprv',
+    network: Network.Polkadot,
+    referendumId: 1309,
+    track: Track.BigTipper,
+    title: "Web Summit: Targeting Web2 companies to explore Polkadot's solutions to solve their problems.",
+});
