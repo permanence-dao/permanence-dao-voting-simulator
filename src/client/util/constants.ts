@@ -282,3 +282,60 @@ MIRROR_REFERENDUM_HELPER_DATA.set('6740c3e1355f17287ad90809', {
     track: Track.BigTipper,
     title: "Web Summit: Targeting Web2 companies to explore Polkadot's solutions to solve their problems.",
 });
+MIRROR_REFERENDUM_HELPER_DATA.set('67521632bfbddc9f354aff0e', {
+    _id: '67521632bfbddc9f354aff0e',
+    cid: 'QmPvYvtngnF9CQHc9TsGDZobXrpX2ZGM8YA3WQqY28ZufH',
+    network: Network.Polkadot,
+    referendumId: 1301,
+    track: Track.SmallSpender,
+    title: 'Treasury Proposal: Funding for Enhancing Substrate Fast Sync for Large Chain States',
+});
+
+MIRROR_REFERENDUM_HELPER_DATA.set('675889eabfbddc9f354aff31', {
+    _id: '675889eabfbddc9f354aff31',
+    cid: 'QmV7zRJ1EC5gaQtHHUEKq7j4QNQUWzYjzw9F85eCqNRRDL',
+    network: Network.Polkadot,
+    referendumId: 1330,
+    track: Track.SmallSpender,
+    title: 'TIP for DDS and Lucy',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('67588935bfbddc9f354aff2b', {
+    _id: '67588935bfbddc9f354aff2b',
+    cid: 'QmbKBekv8hao6htAznejiquzEdap3DhAGKeLoTmBj33XtG',
+    network: Network.Polkadot,
+    referendumId: 1300,
+    track: Track.SmallSpender,
+    title: 'SolidityScan Polkadot Proposal',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('6758898ebfbddc9f354aff2e', {
+    _id: '6758898ebfbddc9f354aff2e',
+    cid: 'QmR9dKvXKiaLJTznScmEAHwu54kw3Xnjp4iLhFawuMzBjr',
+    network: Network.Polkadot,
+    referendumId: 1318,
+    track: Track.SmallSpender,
+    title: 'PROPOSAL EDUCATING IN LATIN AMERICA WITH THE POLKADOT ECOSYSTEM PART 2',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('675d31bebfbddc9f354aff3b', {
+    _id: '675d31bebfbddc9f354aff3b',
+    cid: 'QmNVpr1PjkzHbVb7CqPs35XzGJzm1Q3bH8cArm63zwp3Kr',
+    network: Network.Polkadot,
+    referendumId: 1312,
+    track: Track.MediumSpender,
+    title: 'Encode x Polkadot 2024: Tranche 1 update and discussion ahead of request for Tranche 2',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('6758867ebfbddc9f354aff1a', {
+    _id: '6758867ebfbddc9f354aff1a',
+    cid: 'QmXMuy25H6mArzvbmev9zGVxwHuMSEGVk8Qs2MVZxMKJ7g',
+    network: Network.Polkadot,
+    referendumId: 1297,
+    track: Track.Treasurer,
+    title: 'Closing Bounty 39. BD (Business Development) Bounty',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('675fcca1bfbddc9f354aff41', {
+    _id: '675fcca1bfbddc9f354aff41',
+    cid: 'QmTJk3vciwZrrWgqDsr1GKbY9dM1bYMr9LveLCEAcpvvfM',
+    network: Network.Polkadot,
+    referendumId: 1314,
+    track: Track.MediumSpender,
+    title: 'Milestone 1: EasyA x Polkadot: In-person hackathons and in-app Polkadot 2.0 crash course (#360DaysOfPolkadot)',
+});
