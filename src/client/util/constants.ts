@@ -339,3 +339,20 @@ MIRROR_REFERENDUM_HELPER_DATA.set('675fcca1bfbddc9f354aff41', {
     track: Track.MediumSpender,
     title: 'Milestone 1: EasyA x Polkadot: In-person hackathons and in-app Polkadot 2.0 crash course (#360DaysOfPolkadot)',
 });
+
+MIRROR_REFERENDUM_HELPER_DATA.set('67607ceebfbddc9f354aff46', {
+    _id: '67607ceebfbddc9f354aff46',
+    cid: 'QmPNdj5ARiFjqY462QHfYBgzvaRx24z7k2vyYAUf964jTD',
+    network: Network.Polkadot,
+    referendumId: 1353,
+    track: Track.MediumSpender,
+    title: 'Ratify Payout APPROVED by Ref. 1303 - The Kus',
+});
+MIRROR_REFERENDUM_HELPER_DATA.set('6760857bbfbddc9f354aff49', {
+    _id: '6760857bbfbddc9f354aff49',
+    cid: 'Qma3GHVFJbg4StbmCZXHWpQTBcgaSf32fMUJGnDWqXe3qN',
+    network: Network.Polkadot,
+    referendumId: 1313,
+    track: Track.BigSpender,
+    title: 'Polkadot Storage: Phase 3/3',
+});
